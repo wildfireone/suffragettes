@@ -8,7 +8,7 @@ var mymap = L.map('mapid').setView([57.1497, -2.0943], 13);
 CartoDB_Positron.addTo(mymap);
 
 
-$.getJSON( "../suffra.json", function( data ) {
+$.getJSON( "http://localhost:8080/suffragettes/suffra.json", function( data ) {
   data.forEach(function(location){
     console.log(location)
     var m = L.marker([location.Lat, location.Lng]).addTo(mymap);
