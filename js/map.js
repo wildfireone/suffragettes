@@ -1,3 +1,13 @@
+/**
+ * @Author: John Isaacs <john>
+ * @Date:   20-Mar-192019
+ * @Filename: map.js
+ * @Last modified by:   john
+ * @Last modified time: 20-Mar-192019
+ */
+
+
+
 var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
@@ -11,19 +21,16 @@ CartoDB_Positron.addTo(mymap);
 $.getJSON( "/suffragettes/suffra.json", function( data ) {
   data.forEach(function(location){
     console.log(location)
-    var m = L.marker([location.Lat, location.Lng]).addTo(mymap);
-    var people = location["people"]
-    var loc3 = location['Location 3 (address)']
-    var loc2 = location['Location 2 (town/district)']
-    var loc1 = location['Location 1 (region/city)']
-    var date = location['Date']
-    var desc = location['Description']
+    var m = L.marker([location.lat, location.lng]).addTo(mymap);
+    var title = location["pin-title"]
+    var loc = location['location']
+    var desc = location['Text']
+		var photoSrc = location['photos']
     m.bindPopup("<b>"
-    +people+"</b><br>"
-    +loc3+"<br>"
-    +loc2+"<br>"
-    +date+"<br>"
-    +"<p>"+desc+"</p>"
+    +litle+"</b><br>"
+    +loc+"<br>"
+    +desc+"<br>"
+    +"<p>"+photoSrc+"</p>"
   )
   })
 });
