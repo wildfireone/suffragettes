@@ -27,7 +27,7 @@ $.getJSON( "/suffragettes/suffra2.json", function( data ) {
     var desc = location['Text']
 		var photoSrc = location['photos']
     m.bindPopup("<b>"
-    +litle+"</b><br>"
+    +title+"</b><br>"
     +loc+"<br>"
     +desc+"<br>"
     +"<p>"+photoSrc+"</p>"
