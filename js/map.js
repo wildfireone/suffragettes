@@ -32,7 +32,7 @@ $.getJSON("/suffragettes/suffra2.json", function(data) {
       photoString = photoString + "<img class='popupimg' src='" + photoSrcs[i] + "' />"
     }
     var popup = L.popup({
-      maxHeight: 100,
+      maxHeight: 300,
       closeOnClick: false,
       keepInView: true
     });
