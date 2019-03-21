@@ -38,6 +38,7 @@ $.getJSON( "/suffragettes/suffra2.json", function( data ) {
 });
 		var content = "<div class='pop'><b>"+title+"</b><br>"+loc+"<br>"+desc+"<br>"+"<p>"+photoString+"</p></div>"
 		popup.setContent(content);
+		myPopup._updateLayout();
     m.bindPopup(popup)
   })
 });
