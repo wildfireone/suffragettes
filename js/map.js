@@ -24,8 +24,10 @@ $.getJSON( "/suffragettes/suffra2.json", function( data ) {
     var m = L.marker([location.lat, location.lng]).addTo(mymap);
     var title = location["pin-title"]
     var loc = location['location']
-    var desc = location['Text']
+    var desc = location['text']
 		var photoSrc = location['photos']
+		var photoString ="";
+		if(photoSrc){ photoString = "<img src='"+photoSrc+"'/>"}
     m.bindPopup("<b>"
     +title+"</b><br>"
     +loc+"<br>"
