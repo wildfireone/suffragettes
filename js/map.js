@@ -31,11 +31,11 @@ $.getJSON( "/suffragettes/suffra2.json", function( data ) {
 		for(i=0; i<photoSrcs.length; i++){
 			photoString = photoString + "<img class='popupimg' src='"+photoSrcs[i]+"' />"
 		}
-    m.bindPopup("<b>"
+    m.bindPopup("<div class='pop'><b>"
     +title+"</b><br>"
     +loc+"<br>"
     +desc+"<br>"
-    +"<p>"+photoString+"</p>"
+    +"<p>"+photoString+"</p></div>"
   )
   })
 });
