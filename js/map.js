@@ -29,7 +29,7 @@ $.getJSON( "/suffragettes/suffra2.json", function( data ) {
 		var photoSrcs = photoSrc.split(' ');
 		var photoString ="";
 		for(i=0; i<photoSrcs.length; i++){
-			photoString = photoString + "<img src='"+photoSrcs[i]+"' crossorigin='anonymous' />"
+			photoString = photoString + "<iframe src='"+photoSrcs[i]+"' />"
 		}
     m.bindPopup("<b>"
     +title+"</b><br>"
