@@ -32,7 +32,7 @@ $.getJSON( "/suffragettes/suffra2.json", function( data ) {
     +title+"</b><br>"
     +loc+"<br>"
     +desc+"<br>"
-    +"<p>"+photoSrc+"</p>"
+    +"<p>"+photoString+"</p>"
   )
   })
 });
