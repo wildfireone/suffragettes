@@ -40,6 +40,6 @@ $.getJSON("/suffragettes/suffra2.json", function(data) {
     popup.setContent(content);
 
     m.bindPopup(popup)
-		popup._updateLayout();
+		//popup._updateLayout();
   })
 });
