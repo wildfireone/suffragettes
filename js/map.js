@@ -68,7 +68,7 @@ var blueIcon = new L.Icon({
 //CartoDB_Positron.addTo(mymap);
 
 
-$.getJSON("../suffra2.json", function (data) {
+$.getJSON("suffra2.json", function (data) {
   data.forEach(function (location) {
     //console.log(location)
     var m = L.marker([location.lat, location.lng], { icon: blueIcon }).addTo(mymap);
