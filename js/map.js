@@ -114,10 +114,11 @@ $.getJSON("suffra2.json", function (data) {
 
 resetAllMarkers = function () {
   var marker;
-  while (marker = L.Marker._bouncingMarkers.shift()) {
+  L.Marker._bouncingMarkers.forEach(function(marker){
     marker._bouncingMotion.isBouncing = false;
     marker.setIcon(blueIcon);   // stop bouncing
-  }
+  });
+
 };
 
 function showSidebar(location) {
