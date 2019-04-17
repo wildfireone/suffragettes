@@ -1,8 +1,49 @@
 #mapid { height: 800px; }
-#map{padding:  0; }
+
 
 h1 {
-  background-color: :white !important
+  background-color: :white !important;
+}
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: .8rem;
+  background: -webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 30rem;
+  font-size: 1rem;
+  background-color: rgba(0,0,0,.3);
+  padding: 1rem;
+}
+
+.text-white-80 {
+  color: rgba(255,255,255,.8)!important;
+}
+
+.text-white-70 {
+  color: rgba(255,255,255,.7)!important;
+}
+
+.text-white-60 {
+  color: rgba(255,255,255,.6)!important;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+.projects-section {
+  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-right: 0px;
+  padding-bottom: 2rem;
+  padding-left: 0px;
 }
 
 .popupimg{
@@ -10,3 +51,9 @@ h1 {
   max-width: 200px;
 
 }
+
+#sidebar{
+  max-height:800px;
+  overflow: auto;
+}
+
