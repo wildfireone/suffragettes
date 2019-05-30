@@ -123,9 +123,9 @@ resetAllMarkers = function () {
 
 function showSidebar(location) {
   $("#mapid").removeClass("col-md-12")
-  $("#mapid").addClass("col-md-9")
+  $("#mapid").addClass("col-md-8")
   $("#sidebar").removeClass("col-md-0")
-  $("#sidebar").addClass("col-md-3")
+  $("#sidebar").addClass("col-md-4")
   $("#sidebar").show();
   var title = location["pin-title"]
   var loc = location['location']
@@ -147,9 +147,9 @@ function showSidebar(location) {
 }
 
 function hideSideBar() {
-  $("#sidebar").removeClass("col-md-3")
+  $("#sidebar").removeClass("col-md-4")
   $("#sidebar").addClass("col-md-0")
-  $("#mapid").removeClass("col-md-9")
+  $("#mapid").removeClass("col-md-8")
   $("#mapid").addClass("col-md-12")
   $("#sidebar").hide();
   //console.log("sidebar hidden")
