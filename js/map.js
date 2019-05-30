@@ -36,7 +36,7 @@ var mymap = L.map('mapid', {
 });
 
 var baseMaps = {
-  
+
   "Histroic": OldMaps,
   "Modern": CartoDB_Positron
 };
@@ -139,7 +139,7 @@ function showSidebar(location) {
   }
 
 
-  var content = "<div class='pop'><b>" + title + "</b><br>" + loc + "<br>" + desc + "<br>" + "<p>" + photoString + "</p></div>"
+  var content = "<div class='pop card'><div class='card-body'><b>" + title + "</b><br>" + loc + "<br>" + desc + "<br>" + "<p>" + photoString + "</p></div></div>"
   $('#sidebar').html(content);
   //console.log("sidebar on")
   //console.log(title)
@@ -154,4 +154,3 @@ function hideSideBar() {
   $("#sidebar").hide();
   //console.log("sidebar hidden")
 }
-
