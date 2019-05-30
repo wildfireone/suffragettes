@@ -1,4 +1,7 @@
-#mapid { height: 800px; }
+#mapid {
+  height: 800px;
+  margin-bottom: 2rem;
+}
 
 /* #mainNav {
   background-color: rgba(0,0,0,.3);
@@ -37,16 +40,16 @@ h1 {
   color: rgba(255,255,255,.6)!important;
 }
 
+.about-section {
+  padding: 5rem 0;
+}
+
 .about-section p {
   margin-bottom: 1rem;
 }
 
 .projects-section {
-  padding: 2rem 0;
-  padding-top: 2rem;
-  padding-right: 0px;
-  padding-bottom: 2rem;
-  padding-left: 0px;
+  padding: 5rem 0;
 }
 
 .popupimg{
