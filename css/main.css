@@ -4,7 +4,7 @@
 }
 
 #mainNav .navbar-brand {
-  padding: 0.25rem 0;
+  padding: 0.25
 }
 
 h1 {
@@ -63,6 +63,10 @@ section#contact a:hover {
 
 .contact-section .card h4 {
   font-weight: bold;
+}
+
+.contact-section .card hr.muted {
+  border-color: rgba(0,0,0,0);
 }
 
 .popupimg{
