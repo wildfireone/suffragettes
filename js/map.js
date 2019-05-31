@@ -67,11 +67,12 @@ var blueIcon = new L.Icon({
 
 //CartoDB_Positron.addTo(mymap);
 
-
 $.getJSON("suffra2.json", function (data) {
+  var markers = L.markerClusterGroup({ spiderfyDistanceMultiplier: 3 });
   data.forEach(function (location) {
     //console.log(location)
-    var m = L.marker([location.lat, location.lng], { icon: blueIcon }).addTo(mymap);
+    var m = L.marker([location.lat, location.lng], { icon: blueIcon })
+
 
 
 
@@ -103,8 +104,49 @@ $.getJSON("suffra2.json", function (data) {
 
 
     //popup._updateLayout();
+    markers.addLayer(m);
   })
+  mymap.addLayer(markers);
 });
+
+
+// $.getJSON("suffra2.json", function (data) {
+//   data.forEach(function (location) {
+//     //console.log(location)
+//     var m = L.marker([location.lat, location.lng], { icon: blueIcon }).addTo(mymap);
+//
+//
+//
+//     m.setBouncingOptions({
+//       bounceHeight: 20,    // height of the bouncing
+//       bounceSpeed: 50,    // bouncing speed coefficient
+//       exclusive: true,  // if this marker bouncing all others must stop
+//     }).on('click', function () {
+//
+//       resetAllMarkers();
+//       this.toggleBouncing();
+//       if (this.isBouncing()) {
+//         this.setIcon(redIcon);
+//         showSidebar(location);
+//       }
+//       else {
+//         resetAllMarkers();
+//         this.setIcon(blueIcon);
+//         hideSideBar();
+//       }
+//     });
+//
+//
+//     /*  var popup = L.popup({
+//        maxHeight: 200,
+//        closeOnClick: false,
+//        keepInView: true
+//      }); */
+//
+//
+//     //popup._updateLayout();
+//   })
+// });
 
 //$('#mapid').click(function(){
 //L.Marker._bouncingMarkers
