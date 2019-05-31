@@ -3,6 +3,10 @@
   margin-bottom: 2rem;
 }
 
+#mainNav .navbar-brand {
+  padding: 0.25rem 0;
+}
+
 h1 {
   background-color: white !important;
 }
