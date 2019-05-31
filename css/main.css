@@ -79,3 +79,61 @@ section#contact a:hover {
   max-height:800px;
   overflow: auto;
 }
+
+/*** Leaflet ***/
+
+/** MarkerCluster **/
+.marker-cluster-small {
+  background-color: rgba(152, 177, 182, 0.6);
+	}
+.marker-cluster-small div {
+	background-color: rgba(68, 112, 122, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(167, 11, 154, 0.6);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(167, 11, 154, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(194, 174, 87, 0.6);
+	}
+.marker-cluster-large div {
+	background-color: rgba(194, 174, 87, 0.6);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(152, 177, 182);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(152, 177, 182);
+	}
+
+.leaflet-oldie .marker-cluster-medium {
+	background-color: rgb(167, 11, 154);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(167, 11, 154);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(194, 174, 87);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(194, 174, 87);
+}
+
+.marker-cluster div {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/** Controls **/
+.leaflet-control-layers-base {
+  font-size: 1rem;
+  font-weight: bold;
+}
