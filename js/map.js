@@ -37,7 +37,7 @@ var mymap = L.map('mapid', {
 
 var baseMaps = {
 
-  "Histroic": OldMaps,
+  "Historic": OldMaps,
   "Modern": CartoDB_Positron
 };
 
@@ -63,12 +63,10 @@ var blueIcon = new L.Icon({
 
 
 
-
-
 //CartoDB_Positron.addTo(mymap);
 
 $.getJSON("suffra2.json", function (data) {
-  var markers = L.markerClusterGroup({ spiderfyDistanceMultiplier: 3 });
+  var markers = L.markerClusterGroup({ spiderfyDistanceMultiplier: 3, maxClusterRadius: 40 });
   data.forEach(function (location) {
     //console.log(location)
     var m = L.marker([location.lat, location.lng], { icon: blueIcon })
@@ -107,6 +105,7 @@ $.getJSON("suffra2.json", function (data) {
     markers.addLayer(m);
   })
   mymap.addLayer(markers);
+  mymap.fitBounds(markers.getBounds());
 });
 
 
