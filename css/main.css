@@ -4,7 +4,16 @@
 }
 
 h1 {
-  background-color: :white !important;
+  background-color: white !important;
+}
+
+section#about a:hover, section#projects a:hover {
+  color: white;
+  border-bottom: 0.125rem solid white;
+}
+
+section#contact a:hover {
+  border-bottom: 0.125rem solid black;
 }
 
 .masthead h1 {
