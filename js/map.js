@@ -71,9 +71,6 @@ $.getJSON("suffra2.json", function (data) {
     //console.log(location)
     var m = L.marker([location.lat, location.lng], { icon: blueIcon })
 
-
-
-
     m.setBouncingOptions({
       bounceHeight: 20,    // height of the bouncing
       bounceSpeed: 50,    // bouncing speed coefficient
@@ -93,66 +90,13 @@ $.getJSON("suffra2.json", function (data) {
       }
     });
 
+    m.bindPopup('<strong>' + location['pin-title'] + '</strong><span class="d-lg-none"><br><a class="js-scroll-trigger" href="#sidebar">More info &rarr;</a></span>');
 
-    /*  var popup = L.popup({
-       maxHeight: 200,
-       closeOnClick: false,
-       keepInView: true
-     }); */
-
-     m.bindPopup('<strong>' + location['pin-title'] + '</strong><span class="d-lg-none"><br><a class="js-scroll-trigger" href="#sidebar">More info &rarr;</a></span>');
-
-    //popup._updateLayout();
     markers.addLayer(m);
   })
   mymap.addLayer(markers);
   mymap.fitBounds(markers.getBounds());
 });
-
-
-// $.getJSON("suffra2.json", function (data) {
-//   data.forEach(function (location) {
-//     //console.log(location)
-//     var m = L.marker([location.lat, location.lng], { icon: blueIcon }).addTo(mymap);
-//
-//
-//
-//     m.setBouncingOptions({
-//       bounceHeight: 20,    // height of the bouncing
-//       bounceSpeed: 50,    // bouncing speed coefficient
-//       exclusive: true,  // if this marker bouncing all others must stop
-//     }).on('click', function () {
-//
-//       resetAllMarkers();
-//       this.toggleBouncing();
-//       if (this.isBouncing()) {
-//         this.setIcon(redIcon);
-//         showSidebar(location);
-//       }
-//       else {
-//         resetAllMarkers();
-//         this.setIcon(blueIcon);
-//         hideSideBar();
-//       }
-//     });
-//
-//
-//     /*  var popup = L.popup({
-//        maxHeight: 200,
-//        closeOnClick: false,
-//        keepInView: true
-//      }); */
-//
-//
-//     //popup._updateLayout();
-//   })
-// });
-
-//$('#mapid').click(function(){
-//L.Marker._bouncingMarkers
-//resetAllMarkers();
-//hideSideBar();
-//});
 
 resetAllMarkers = function () {
   var marker;
