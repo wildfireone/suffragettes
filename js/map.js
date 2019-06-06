@@ -66,7 +66,7 @@ var blueIcon = new L.Icon({
 //CartoDB_Positron.addTo(mymap);
 
 $.getJSON("suffra2.json", function (data) {
-  var markers = L.markerClusterGroup({ spiderfyDistanceMultiplier: 1, maxClusterRadius: 40 });
+  var markers = L.markerClusterGroup({ spiderfyDistanceMultiplier: 2, maxClusterRadius: 40 });
   data.forEach(function (location) {
     //console.log(location)
     var m = L.marker([location.lat, location.lng], { icon: blueIcon })
@@ -100,6 +100,7 @@ $.getJSON("suffra2.json", function (data) {
        keepInView: true
      }); */
 
+     m.bindPopup('<strong>' + location['pin-title'] + '</strong><span class="d-lg-none"><br><a class="js-scroll-trigger" href="#sidebar">More info &rarr;</a></span>');
 
     //popup._updateLayout();
     markers.addLayer(m);
@@ -176,11 +177,11 @@ function showSidebar(location) {
   var photoString = "";
 
   for (i = 0; i < photoSrcs.length; i++) {
-    photoString = photoString + "  <a href='" + photoSrcs[i] + "' data-lightbox='image'" + loc + " data-title='" + loc + "'><img class='popupimg' src='" + photoSrcs[i] + "' /></a>"
+    photoString = photoString + "  <a href='" + photoSrcs[i] + "' data-lightbox='image'" + loc + " data-title='" + loc + "'><img class='popupimg img-thumbnail' src='" + photoSrcs[i] + "' /></a>"
   }
 
 
-  var content = "<div class='pop card'><div class='card-body'><b>" + title + "</b><br>" + loc + "<br>" + desc + "<br>" + "<p>" + photoString + "</p></div></div>"
+  var content = "<div class='pop card'><div class='card-body'><b>" + title + "</b><hr><span class='text-uppercase'><i class='fas fa-map-marker-alt'></i> " + loc + "</span><hr>" + desc + "<hr>" + "<p>" + photoString + "</p><span class='d-lg-none'><a class='js-scroll-trigger' href='#mapid'>Back to map &uarr;</a></span></div></div>"
   $('#sidebar').html(content);
   //console.log("sidebar on")
   //console.log(title)
