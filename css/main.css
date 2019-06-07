@@ -5,6 +5,11 @@
 
 #mainNav .navbar-brand {
   padding: 0.25rem 0;
+  opacity: 0;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  opacity: 1;
 }
 
 h1 {
@@ -67,6 +72,17 @@ section#contact a:hover {
 
 .contact-section .card hr.muted {
   border-color: rgba(0,0,0,0);
+}
+
+.thanks-section {
+  color: white;
+  font-weight: bold;
+}
+
+.thanks-section hr {
+  border-color: white;
+  border-width: .25rem;
+  width: 12rem;
 }
 
 .popupimg{
