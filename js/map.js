@@ -41,7 +41,7 @@ var baseMaps = {
   "Modern": CartoDB_Positron
 };
 
-L.control.layers(baseMaps).addTo(mymap);
+L.control.layers(baseMaps, null, { collapsed: false }).addTo(mymap);
 
 var redIcon = new L.Icon({
   iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -90,7 +90,7 @@ $.getJSON("suffra2.json", function (data) {
       }
     });
 
-    m.bindPopup('<strong>' + location['pin-title'] + '</strong><span class="d-lg-none"><br><a class="js-scroll-trigger" href="#sidebar">More info &rarr;</a></span>');
+    m.bindPopup('<strong>' + location['pin-title'] + '</strong><span class="d-md-none"><br><a class="js-scroll-trigger" href="#sidebar">More info &rarr;</a></span>');
 
     markers.addLayer(m);
   })
@@ -133,7 +133,7 @@ function showSidebar(location) {
   }
 
 
-  var content = "<div class='pop card'><div class='card-body'><b>" + title + "</b><hr><span class='text-uppercase'><i class='fas fa-map-marker-alt'></i> " + loc + "</span><hr>" + desc + "<hr>" + "<p>" + photoString + "</p><span class='d-lg-none'><a class='js-scroll-trigger' href='#mapid'>Back to map &uarr;</a></span></div></div>"
+  var content = "<div class='pop card'><div class='card-body'><b>" + title + "</b><hr><span class='text-uppercase'><i class='fas fa-map-marker-alt'></i> " + loc + "</span><hr>" + desc + "<hr>" + "<p>" + photoString + "</p><span class='d-md-none'><a class='js-scroll-trigger' href='#mapid'>Back to map &uarr;</a></span></div></div>"
   $('#sidebar').html(content);
   //console.log("sidebar on")
   //console.log(title)
