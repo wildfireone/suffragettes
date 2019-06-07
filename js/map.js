@@ -118,10 +118,18 @@ function showSidebar(location) {
   var desc = location['text']
   var photoSrc = location['photos']
   var photoSrcs = photoSrc.split(' ');
+  var photoCap = location['captions']
+  var photoCaps = photoCap.split('|');
   var photoString = "";
 
+  // for (i = 0; i < photoSrcs.length; i++) {
+  //   photoString = photoString + "  <a href='" + photoSrcs[i] + "' data-lightbox='image'" + loc + " data-title='" + loc + "'><img class='popupimg img-thumbnail' src='" + photoSrcs[i] + "' /></a>"
+  // }
+
   for (i = 0; i < photoSrcs.length; i++) {
-    photoString = photoString + "  <a href='" + photoSrcs[i] + "' data-lightbox='image'" + loc + " data-title='" + loc + "'><img class='popupimg img-thumbnail' src='" + photoSrcs[i] + "' /></a>"
+    if(photoSrc[i]) {
+      photoString = photoString + "  <figure class='figure'><a href='" + photoSrcs[i] + "' data-lightbox='image'" + loc + " data-title='" + loc + (photoCaps[i] ? ": " + photoCaps[i] : "") + "'><img class='popupimg img-thumbnail figure-img img-fluid rounded' src='" + photoSrcs[i] + "' /></a>" + (photoCaps[i] ? "<figcaption class='figure-caption'>Photo: " + photoCaps[i] + "</figcaption>" : "") + "</figure>"
+    }
   }
 
 
