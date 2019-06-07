@@ -83,15 +83,15 @@ section#contact a:hover {
   border-color: rgba(0,0,0,0);
 }
 
-.thanks-section {
+.acknowledgements-section {
   color: white;
   font-weight: bold;
 }
 
-.thanks-section hr {
+.acknowledgements-section hr {
   border-color: white;
   border-width: .25rem;
-  width: 12rem;
+  width: 20rem;
 }
 
 .popupimg{
