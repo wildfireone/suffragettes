@@ -5,11 +5,20 @@
 
 #mainNav .navbar-brand {
   padding: 0.25rem 0;
+  display: none;
   opacity: 0;
+  font-size: 0.60em;
 }
 
-#mainNav.navbar-shrink .navbar-brand {
+#mainNav.navbar-shrink a.navbar-brand {
+  display: inline;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #mainNav .navbar-brand {
+    font-size: inherit;
+  }
 }
 
 h1 {
