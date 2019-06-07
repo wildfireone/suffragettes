@@ -10,7 +10,7 @@
   font-size: 0.60em;
 }
 
-#mainNav.navbar-shrink a.navbar-brand {
+#mainNav.navbar-shrink .navbar-brand {
   display: inline;
   opacity: 1;
 }
@@ -157,7 +157,7 @@ section#contact a:hover {
   color: white;
 }
 
-/** Leaflet Controls **/
+/** Controls **/
 .leaflet-control-layers-base {
   /* font-size: 1rem; */
   /* font-weight: bold; */
