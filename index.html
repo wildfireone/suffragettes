@@ -26,6 +26,9 @@
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
     crossorigin="" />
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+    integrity="sha384-5kMSQJ6S4Qj5i09mtMNrWpSi8iXw230pKU76xTmrpezGnNJQzj0NzXjQLLg+jE7k"
+    crossorigin="" />
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
@@ -39,7 +42,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">The Aberdeen Women’s Suffrage Campaign</a>
+      <a class="navbar-brand js-scroll-trigger text-wrap" href="#page-top">The Aberdeen Women’s Suffrage Campaign</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -56,6 +59,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link js-scroll-trigger" href="#contact">Blog <i class="fa fa-external-link-alt"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger font-italic" href="#acknowledgements">Acknowledgements</a>
           </li>
         </ul>
       </div>
@@ -80,7 +89,7 @@
   <section id="about" class="about-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <h2 class="text-white mb-4 text-center">Who Were the Aberdeen Suffragists and Suffragettes?</h2>
 
           <p class="text-white-70 text-justify">Women in Britain first started large‐scale campaigning for the vote in
@@ -101,9 +110,8 @@
           <p class="text-white-70 text-justify">An Aberdeen branch of the WSPU had been set up by 1907. From then until
             early 1909 its honorary secretary was the journalist Caroline Phillips. You can learn more about Phillips
             and the archive of her correspondence held in Aberdeen <a
-              href='https://openair.rgu.ac.uk/bitstream/handle/10059/2588/PEDERSEN%202017%20Caroline%20Phillips.pdf?sequence=1&isAllowed=y'>here</a>
+              href='https://openair.rgu.ac.uk/bitstream/handle/10059/2588/PEDERSEN%202017%20Caroline%20Phillips.pdf?sequence=1&isAllowed=y'>here</a>.
           </p>
-
         </div>
       </div>
       <img src="img/castlegatenight2.jpeg" class="img-fluid" alt="">
@@ -114,43 +122,43 @@
   <section id="map" class="projects-section bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black-70 mb-4 text-center">Mapping Aberdeen’s suffragists and suffragettes</h2>
+        <div class="col-lg-10 mx-auto">
+          <h2 class="text-black-70 mb-4 text-center">Mapping Aberdeen’s Suffragists and Suffragettes</h2>
 
           <p class="text-black-70 text-justify">
-            The aim of this website it to map the locations of suffragist and suffragette activity throughout the city
+            The aim of this website is to map the locations of suffragist and suffragette activity throughout the city
             and Aberdeenshire.
             Each point on the map indicates at least one suffrage-related event. Some locations, such as the Aberdeen
             Music Hall, saw many different events. Clicking each link will give you further information about what
             happened and who was involved.
-            We aim to cover the suffrage campaigns of the constitutional suffragists, such as the national Union of
+            We aim to cover the suffrage campaigns of the constitutional suffragists, such as the National Union of
             Women’s Suffrage Societies (NUWSS), and the militant suffragettes, such as the Women’s Social and Political
             Union (WSPU) and the Women’s Freedom League (WFL).
           </p>
 
         </div>
       </div>
+      <hr>
       <div class="row">
       <div id="mapid" class="col-md-12"></div>
       <div id="sidebar" class="col-md-0"></div>
     </div>
     </div>
   </section>
+
    <!-- Contact Section -->
   <section id="contact" class="contact-section bg-black">
     <div class="container">
-
       <div class="row">
-
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Professor</br> Sarah Pedersen</h4> 
-              <h6 class="m-0"></h5class>Robert Gordon University</h6>
+              <h4 class="text-uppercase m-0">Professor</br> Sarah Pedersen</h4>
+              <h6 class="m-0">Robert Gordon University</h6>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">s.pedersen@rgu.ac.uk</a>
+                <a href="mailto:s.pedersen@rgu.ac.uk">s.pedersen@rgu.ac.uk</a>
               </div>
             </div>
           </div>
@@ -159,20 +167,33 @@
         <div class="col-md-8 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <h4 class="m-0">If you know of a suffrage event that we have not covered, please get in contact</h4>
+              <h4 class="m-0">If you know of a suffrage event that we have not covered, please get in contact.</h4>
+              <hr class="my-4 muted">
+              <h6 class="small text-black-50">Further Resources</h6>
+              <div class="small text-black-50">
+                <a target="_blank" href="http://www.scottishsuffragettes.co.uk/blog">
+                  'The Suffragettes in North East Scotland' Blog
+                  <i class="fa fa-external-link-alt"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
+    <div id="acknowledgements" class="container acknowledgements-section">
+      <h4 class="text-uppercase m-0">Acknowledgements</h4>
+      <hr>
+      <p>Many thanks to Dr John Isaacs, Andy Grinnall. Professor Richard Laing, Dr Marianthi Leon, Craig Wilson and Dean Brooks for their contributions to this project.</p>
+      <hr>
+    </div>
+    <br>
     <div class="container">
-      Copyright &copy; WildFireOne 
+      Copyright &copy; WildFireOne
     </div>
   </footer>
 
@@ -186,11 +207,14 @@
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
     crossorigin=""></script>
-  <script type="text/javascript" src="js/leaflet.smoothmarkerbouncing.js" />
+  <script src="js/leaflet.smoothmarkerbouncing.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"
+    integrity="sha384-RLIyj5q1b5XJTn0tqUhucRZe40nFTocRP91R/NkRJHwAe4XxnTV77FXy/vGLiec2"
+    crossorigin=""></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
-  
+
   <script src="js/lightbox.js"></script>
   <script src="js/map.js"></script>
 
