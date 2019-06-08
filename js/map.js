@@ -146,6 +146,7 @@ function hideSideBar() {
   $("#sidebar").addClass("col-md-0")
   $("#mapid").removeClass("col-md-8")
   $("#mapid").addClass("col-md-12")
-  $("#sidebar").hide();
+  $("#sidebar").hide()
+  mymap.invalidateSize()
   //console.log("sidebar hidden")
 }
