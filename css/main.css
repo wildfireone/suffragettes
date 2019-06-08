@@ -1,7 +1,11 @@
+/* Map Container */
+
 #mapid {
   height: 800px;
   margin-bottom: 2rem;
 }
+
+/* Navigation */
 
 #mainNav .navbar-brand {
   padding: 0.25rem 0;
@@ -21,9 +25,7 @@
   }
 }
 
-h1 {
-  background-color: white !important;
-}
+/* Links */
 
 section#about a:hover, section#projects a:hover {
   color: white;
@@ -32,6 +34,12 @@ section#about a:hover, section#projects a:hover {
 
 section#contact a:hover {
   border-bottom: 0.125rem solid black;
+}
+
+/* Header */
+
+h1 {
+  background-color: white !important;
 }
 
 .masthead h1 {
@@ -50,6 +58,8 @@ section#contact a:hover {
   background-color: rgba(0,0,0,.3);
   padding: 1rem;
 }
+
+/* Sections */
 
 .text-white-80 {
   color: rgba(255,255,255,.8)!important;
@@ -94,11 +104,14 @@ section#contact a:hover {
   width: 20rem;
 }
 
+/* Lightbox */
+
 .popupimg{
   max-width: 300px;
   max-width: 200px;
-
 }
+
+/* Map Sidebar */
 
 #sidebar {
   max-height:800px;
@@ -162,10 +175,4 @@ section#contact a:hover {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-}
-
-/** Controls **/
-.leaflet-control-layers-base {
-  /* font-size: 1rem; */
-  /* font-weight: bold; */
 }
