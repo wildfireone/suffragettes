@@ -105,7 +105,14 @@ section#contact a:hover {
   overflow: auto;
 }
 
+#sidebar .card-title {
+  font-weight: bold;
+}
+
 /*** Leaflet ***/
+#map-title {
+  font-weight: bold;
+}
 
 /** MarkerCluster **/
 .marker-cluster-small {
