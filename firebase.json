@@ -4,7 +4,18 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "**/scss/**",
+      "*.zip",
+      "*.xlsx",
+      "*.xls",
+      "*.csv",
+      "*.code-workspace",
+      "suffra.json",
+      "package*.json",
+      "indexTemp.html",
+      "gulpfile.js",
+      "testserver.js"
     ]
   }
 }
