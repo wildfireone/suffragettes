@@ -22,10 +22,10 @@
   {
     "location": "Broad Hill, Aberdeen",
     "Latitude and longitude": "57.159290,-2.131480",
-    "lat": 57.156803, 
+    "lat": 57.156803,
     "lng": -2.083501,
     "pin-title": "Broad Hill",
-    "text": "Miss E. Foggo, of the non-militant National Union of Women’s Suffrage Societies, addressed a large crowd on the Broad Hill, Aberdeen, on 17 June 1914. She spoke on the question ‘Will votes for women help salve social questions?’ and argued that issues such as housing, the milk supply and other domestic questions needed a female voice because men had little knowledge of such problems.",
+    "text": "Miss Emily Foggo, of the non-militant National Union of Women’s Suffrage Societies, addressed a large crowd on the Broad Hill, Aberdeen, on 17 June 1914. She spoke on the question ‘Will votes for women help salve social questions?’ and argued that issues such as housing, the milk supply and other domestic questions needed a female voice because men had little knowledge of such problems.",
     "photos": "",
     "captions": ""
   },
@@ -38,6 +38,17 @@
     "text": "A large open-air meeting at the Castlegate on 27 July 1914 heard the well-known surgeon Sir Victor Horsley and his wife, Lady Horsley, protest against the forcible feeding of the suffragettes. The meeting was organised by the Aberdeen branch of the NUWSS – the non-militant suffrage organisation. Also on the platform were Professor Trail, Professor of Botany, and Professor J. Arthur Thomson, Professor of Natural History, of Aberdeen University.",
     "photos": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sir_Victor_Horsley._Photograph_by_G.C._Beresford._Wellcome_V0028720.jpg https://upload.wikimedia.org/wikipedia/commons/5/50/Castle_Street_and_municipal_buildings_Aberdeen_Scotland.jpg",
     "captions": "Sir Victor Horsley"
+  },
+  {
+    "location": "Castlegate Aberdeen",
+    "Latitude and longitude": "57.148232,-2.092735",
+    "lat": 57.148232,
+    "lng": -2.092735,
+    "pin-title": "Castlegate",
+    "text": "In February 1907, Annie Kenney and Helen Fraser addressed an open-air crowd in Castle Street. Annie Kenney had arrived that day from London and was supposed to have come to Aberdeen with Emmeline and Christabel Pankhurst to campaign in the south Aberdeenshire by-election. However, the two Pankhursts had been arrested during a raid on the House of Commons. Kenney explained that she had spoken at a meeting in Caxton Hall in London before the raid, but she had been ‘held back from the fray’ by the committee because she had ‘the special duty before her of appearing in Aberdeen’. In her speech in Castle Street she described in detail events of the previous day in London.
+    Annie Kenney, a mill girl from Manchester, was unusual in being a working-class leader in the WSPU. Kenney and Christabel Pankhurst had been the first suffragettes to be sent to prison for refusal to pay a fine after disturbing a political meeting in 1905.",
+    "photos": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Annie_Kenney%2C_1909.jpg",
+    "captions": "Annie Kenney"
   },
   {
     "location": "The Queen’s Cinema, 120 Union Street, Aberdeen",
@@ -445,8 +456,9 @@
     "lat": 57.503833,
     "lng": -1.791038,
     "pin-title": "The Links, Peterhead",
-    "text": "Miss E. Foggo, of the National Union of Women’s Suffrage Societies (NUWSS) addressed a large crowd on the links on 13 July 1914. She asked the electors of Peterhead to help the suffragettes fight their battle and noted that she thought it was the working women who needed the vote more than women of leisure.",
-    "photos": "",
+    "text": "Miss Emily Foggo, of the National Union of Women’s Suffrage Societies (NUWSS) addressed a large crowd on the links on 13 July 1914. She asked the electors of Peterhead to help the suffragettes fight their battle and noted that she thought it was the working women who needed the vote more than women of leisure.
+    Emily Foggo’s father had been the factor of the Invercauld estates, but the family later moved to Edinburgh. Emily became involved in the women’s suffrage campaign in that city and was in charge of the Bathgate, West Lothian, branch of the constitutional suffragists.",
+    "photos": "" ,
     "captions": ""
   },
   {
